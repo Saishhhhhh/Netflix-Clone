@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.background-img {
+  background-image: url("Assets/bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 644px;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+.black-cover {
+  background-color: black;
+  height: 644px;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  /* background-color: white; */
+  justify-content: space-between;
+  margin: auto;
+  max-width: 80vw;
+  height: 80px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.logo {
+  color: #e50914;
+  z-index: 10;
+  opacity: 0.875;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 215px;
+}
+
+.lang-select {
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.438);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 4px;
+  width: 126px;
+  height: 32px;
+  text-align: center;
+  z-index: 10;
+  color: white;
+}
+
+.lang-select option {
+  color: black;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: white;
+  width: 76.9px;
+  height: 32px;
+  font-size: 15px;
+  background-color: #e50914;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.sign-in:hover {
+  opacity: 0.9;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  position: relative;
+  z-index: 10;
+  height: 500px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero1 {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 45vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 55px;
+  font-weight: bolder;
+  padding: 10px 0;
+  line-height: 1.25;
+}
+
+.hero2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 0;
+  line-height: 1.4;
+  font-weight: 501;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.hero3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 0;
+  line-height: 1.4;
+}
+
+.hero-buttons {
+  margin-top: 2px;
+  display: flex;
+  gap: 7px;
+}
+
+.email {
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.438);
+  border: 1px solid rgba(255, 255, 255, 0.54);
+  border-radius: 4px;
+  width: 319px;
+  height: 54px;
+  text-align: left;
+  padding-left: 10px;
+  z-index: 10;
+  color: white;
+}
+
+.email::placeholder {
+  color: rgba(255, 255, 255, 0.696);
+}
+
+.get-button {
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: white;
+  width: 180px;
+  height: 56px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.get-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.get-button:hover {
+  opacity: 0.9;
+}
+
+.trending-part {
+  padding-top: 30px;
+  background-color: black;
+  color: white;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.trending-nav {
+  color: white;
+  max-width: 80vw;
+  margin: 20px auto;
+  padding-top: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.trending-nav h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-dropdown {
+  background-color: #333;
+  color: white;
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.trending-section {
+  margin: auto;
+  max-width: 80vw;
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.trending-item {
+  transition: all 1s ease-out;
+  position: relative;
+  width: 190px;
+  flex-shrink: 0;
+}
+
+.trending-item:hover {
+  transform: scale(1.1);
+}
+
+.trending-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.item-number {
+  position: absolute;
+  bottom: 30px;
+  font-size: 80px;
+  font-weight: bold;
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+
+.recently-added {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background-color: #e50914;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+
+.text1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+.t1 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.t2 {
+  font-size: 24px;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 556px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+
+.text2 {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  margin-top: 50px;
+  position: relative;
+  z-index: 20;
+}
+
+.FAQ {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.FAQ h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.question-box {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.question-box:hover {
+  background-color: #414141;
+  color: white;
+}
+
+footer {
+  color: white;
+  max-width: 80vw;
+  margin: auto;
+  padding: 40px 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer .questions {
+  padding-bottom: 20px;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer-item {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.footer-item a {
+  display: block;
+  color: #757575;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
